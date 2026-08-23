@@ -1,5 +1,6 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en-us">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <meta name="robots" content="noindex,nofollow" />
     <link rel="stylesheet" href="../styles.css">
 </head>
+
 <body>
     <header>
         <nav class="main-nav">
@@ -32,7 +34,9 @@
                             <button id="playNowBtn" class="play-now-btn">Play Now</button>
                         </div>
                         <div id="gameIframe" class="game-iframe">
-                            <iframe id="gameFrame" src="https://trafficjam3d.github.io/crazy-for-speed/" frameborder="0" allowfullscreen></iframe>
+                            <iframe id="gameFrame"
+                                src="https://nightcityracing.github.io/game-nightcityracing/crazy-for-speed/"
+                                frameborder="0" allowfullscreen></iframe>
                         </div>
                     </div>
                     <div class="game-controls">
@@ -45,70 +49,117 @@
                         <div class="right-controls">
                             <button id="fullscreenGame" class="game-btn">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
-                                    <path d="M3 3h4v2H5v2H3V3zm4 14H3v-4h2v2h2v2zm10-2h-2v2h-4v2h6v-4zm-2-10h2v4h-2V5h-2V3h4v2z"/>
+                                    <path
+                                        d="M3 3h4v2H5v2H3V3zm4 14H3v-4h2v2h2v2zm10-2h-2v2h-4v2h6v-4zm-2-10h2v4h-2V5h-2V3h4v2z" />
                                 </svg>
                             </button>
                         </div>
                     </div>
+                    <div class="game-description">
+                        <div class="description-tabs">
+                            <button class="tab-btn active" data-tab="about">About Game</button>
+                            <button class="tab-btn" data-tab="howto">How to Play</button>
+                        </div>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="about">
+                                <h3>About Crazy For Speed</h3>
+                                <p>Crazy For Speed delivers thrilling arcade street racing through iconic global locations. Weave through traffic, trigger nitro boosts, and customize top sports cars.</p>
+                                <div id="features">
+                                    <h3>Game Features</h3>
+                                    <div class="feature-grid">
+                                        <div class="feature-card">
+                                            <h4>Global Street Tracks</h4>
+                                            <p>Race through Tokyo, Alps, Monaco, and Nevada</p>
+                                        </div>
+                                        <div class="feature-card">
+                                            <h4>Custom Sports Cars</h4>
+                                            <p>Customize paint jobs, decals, and performance specs</p>
+                                        </div>
+                                        <div class="feature-card">
+                                            <h4>Traffic Overtaking</h4>
+                                            <p>Dodge highway traffic at extreme speeds</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="howto">
+                                <h3>How to Play</h3>
+                                <div class="controls-guide">
+                                    <div class="control-item">
+                                        <div class="key">Up / W</div>
+                                        <p>Accelerate</p>
+                                    </div>
+                                    <div class="control-item">
+                                        <div class="key">Down / S</div>
+                                        <p>Brake</p>
+                                    </div>
+                                    <div class="control-item">
+                                        <div class="key">Shift / N</div>
+                                        <p>Nitro Boost</p>
+                                    </div>
+                                </div>
+                                <div class="tips">
+                                    <h4>Pro Tips:</h4>
+                                    <ul>
+                                        <li>Perform close near-misses with traffic cars to fill your Nitro bar faster.</li>
+                                        <li>Save full nitro charges for long straightaways.</li>
+                                        <li>Drift around hairpins to maintain momentum without scrubbing speed.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="game-sidebar">
-                    <div class="similar-games">
+                                        <div class="similar-games">
                         <h3>Similar Games</h3>
                         <div class="games-grid">
-                            <a href="../game/highway-racer-2.html" class="game-card">
-                                <img src="../img/highway-racer-2.png" alt="Highway Racer 2">
+                            <a href="../index.html" class="game-card">
+                                <img src="../img/night-city-racing.png" alt="Night City Racing">
                                 <div class="game-card-info">
-                                    <h4>Highway Racer 2</h4>
-                                    
+                                    <h4>Night City Racing</h4>
                                 </div>
                             </a>
-                            <a href="../game/drift-hunters.html" class="game-card">
-                                <img src="../img/drift-hunters.png" alt="Drift Hunters">
+                            <a href="../game/2-player-dark-racing.html" class="game-card">
+                                <img src="../img/2-player-dark-racing.png" alt="2 Player Dark Racing">
                                 <div class="game-card-info">
-                                    <h4>Drift Hunters</h4>
-                                    
-                                </div>
-                            </a>
-                            <a href="../game/crazy-for-speed.html" class="game-card">
-                                <img src="../img/crazy-for-speed.png" alt="Crazy For Speed">
-                                <div class="game-card-info">
-                                    <h4>Crazy For Speed</h4>
-                                    
+                                    <h4>2 Player Dark Racing</h4>
                                 </div>
                             </a>
                             <a href="../game/atv-ultimate-offroad.html" class="game-card">
-                                <img src="../img/atv-ultimate-offroad.png" alt="Atv Ultimate Offroad">
+                                <img src="../img/atv-ultimate-offroad.png" alt="ATV Ultimate Offroad">
                                 <div class="game-card-info">
-                                    <h4>Atv Ultimate Offroad</h4>
-                                    
+                                    <h4>ATV Ultimate Offroad</h4>
                                 </div>
                             </a>
-                            <a href="../game/mr-racer-car-racing.html" class="game-card">
-                                <img src="../img/mr-racer-car-racing.png" alt="Mr Racer Car Racing">
+                            <a href="../game/boat-drift.html" class="game-card">
+                                <img src="../img/boat-drift.png" alt="Boat Drift">
                                 <div class="game-card-info">
-                                    <h4>Mr Racer Car Racing</h4>
-                                    
+                                    <h4>Boat Drift</h4>
                                 </div>
                             </a>
-                            <a href="../game/drift-io.html" class="game-card">
-                                <img src="../img/drift-io.png" alt="Drift Io">
+                            <a href="../game/burnin-rubber-5-xs.html" class="game-card">
+                                <img src="../img/burnin-rubber-5-xs.png" alt="Burnin Rubber 5 XS">
                                 <div class="game-card-info">
-                                    <h4>Drift Io</h4>
-                                    
+                                    <h4>Burnin Rubber 5 XS</h4>
                                 </div>
                             </a>
-                            <a href="../game/drift-escape.html" class="game-card">
-                                <img src="../img/drift-escape.png" alt="Drift Escape">
+                            <a href="../game/burnout-drift-hilltop.html" class="game-card">
+                                <img src="../img/burnout-drift-hilltop.png" alt="Burnout Drift Hilltop">
                                 <div class="game-card-info">
-                                    <h4>Drift Escape</h4>
-                                    
+                                    <h4>Burnout Drift Hilltop</h4>
                                 </div>
                             </a>
-                            <a href="../game/rally-racer-dirt.html" class="game-card">
-                                <img src="../img/rally-racer-dirt.png" alt="Rally Racer Dirt">
+                            <a href="../game/car-speed-racing-tycoon.html" class="game-card">
+                                <img src="../img/car-speed-racing-tycoon.png" alt="Car Speed Racing Tycoon">
                                 <div class="game-card-info">
-                                    <h4>Rally Racer Dirt</h4>
-                                    
+                                    <h4>Car Speed Racing Tycoon</h4>
+                                </div>
+                            </a>
+                            <a href="../game/construction-ramp-jumping.html" class="game-card">
+                                <img src="../img/construction-ramp-jumping.png" alt="Construction Ramp Jumping">
+                                <div class="game-card-info">
+                                    <h4>Construction Ramp Jumping</h4>
                                 </div>
                             </a>
                         </div>
@@ -121,7 +172,9 @@
             <div class="website-info">
                 <div class="info-column">
                     <h3>About Night City Racing</h3>
-                    <p>Night City Racing is your premier destination for high-quality racing games. We offer a carefully curated collection of racing experiences, from intense street races to professional rally competitions.</p>
+                    <p>Night City Racing is your premier destination for high-quality racing games. We offer a carefully
+                        curated collection of racing experiences, from intense street races to professional rally
+                        competitions.</p>
                 </div>
                 <div class="info-column">
                     <h3>Our Games</h3>
@@ -160,4 +213,5 @@
 
     <script src="../game.js"></script>
 </body>
-</html> 
+
+</html>
