@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Dash - Night City Racing</title>
+    <meta name="robots" content="noindex,nofollow" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="main-nav">
+            <a href="../index.html" class="logo">
+                <img src="../img/night-city-racing.png" alt="Racing Logo" class="logo-icon">
+                <h1>Night City Racing</h1>
+            </a>
+            <ul class="nav-links">
+                <li><a href="../index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="../catology/newgame.html"><i class="fa-solid fa-star"></i> New Games</a></li>
+                <li><a href="../catology/hotgame.html"><i class="fa-solid fa-fire"></i> Hot Games</a></li>
+                <li><a href="../catology/action.html"><i class="fa-solid fa-bolt"></i> Action</a></li>
+                <li><a href="../catology/adventure.html"><i class="fa-solid fa-compass"></i> Adventure</a></li>
+                <li><a href="../catology/car.html"><i class="fa-solid fa-car"></i> Car</a></li>
+                <li><a href="../catology/puzzle.html"><i class="fa-solid fa-puzzle-piece"></i> Puzzle</a></li>
+                <li><a href="../catology/running.html"><i class="fa-solid fa-person-running"></i> Running</a></li>
+                <li><a href="../catology/shootting.html"><i class="fa-solid fa-crosshairs"></i> Shooting</a></li>
+                <li><a href="../catology/sports.html"><i class="fa-solid fa-trophy"></i> Sports</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="game-section">
+            <div class="game-layout">
+                <div class="game-container">
+                    <div class="canvas-container">
+                        <canvas id="gameCanvas"></canvas>
+                        <div class="play-overlay">
+                            <button id="playNowBtn" class="play-now-btn">Play Now</button>
+                        </div>
+                        <div id="gameIframe" class="game-iframe">
+                            <iframe id="gameFrame"
+                                src="https://nightcityracing.github.io/game-nightcityracing/geometry-dash/"
+                                frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="game-controls">
+                        <div class="left-controls">
+                            <img src="../img/geometry-dash.png" alt="Geometry Dash" class="game-icon">
+                            <div class="game-info">
+                                <h2 class="game-title">Geometry Dash</h2>
+                            </div>
+                        </div>
+                        <div class="right-controls">
+                            <button id="fullscreenGame" class="game-btn">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path
+                                        d="M3 3h4v2H5v2H3V3zm4 14H3v-4h2v2h2v2zm10-2h-2v2h-4v2h6v-4zm-2-10h2v4h-2V5h-2V3h4v2z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="game-description">
+                        <div class="description-tabs">
+                            <button class="tab-btn active" data-tab="about">About Game</button>
+                            <button class="tab-btn" data-tab="howto">How to Play</button>
+                        </div>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="about">
+                                <h3>About Geometry Dash</h3>
+                                <p>The iconic rhythm-based platformer! Jump, fly, and flip your way through dangerous spiky passages and rhythmic beats.</p>
+                                <div id="features">
+                                    <h3>Game Features</h3>
+                                    <div class="feature-grid">
+                                        <div class="feature-card">
+                                            <h4>Exciting Gameplay</h4>
+                                            <p>Smooth responsive controls and engaging level design</p>
+                                        </div>
+                                        <div class="feature-card">
+                                            <h4>Instant Play</h4>
+                                            <p>No downloads or installs required, play instantly in browser</p>
+                                        </div>
+                                        <div class="feature-card">
+                                            <h4>Unblocked Access</h4>
+                                            <p>Fully unlocked and playable on Chromebooks, PC, and mobile</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="howto">
+                                <h3>How to Play</h3>
+                                <div class="controls-guide">
+                                    <div class="control-item">
+                                        <div class="key">Arrows / WASD</div>
+                                        <p>Move / Steer Character</p>
+                                    </div>
+                                    <div class="control-item">
+                                        <div class="key">Space / Click</div>
+                                        <p>Jump / Interact / Action</p>
+                                    </div>
+                                </div>
+                                <div class="tips">
+                                    <h4>Pro Tips:</h4>
+                                    <ul>
+                                        <li>Watch enemy patterns and obstacle rhythms carefully before moving.</li>
+                                        <li>Time your jumps with precision to clear tricky platforms.</li>
+                                        <li>Collect all secret coins or stars to unlock bonus features!</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-sidebar">
+                    <div class="similar-games">
+                        <h3>Similar Games</h3>
+                        <div class="games-grid">
+                            <a href="../game/2-player-dark-racing.html" class="game-card">
+                                <img src="../img/2-player-dark-racing.png" alt="2 Player Dark Racing">
+                                <div class="game-card-info">
+                                    <h4>2 Player Dark Racing</h4>
+                                </div>
+                            </a>
+                            <a href="../index.html" class="game-card">
+                                <img src="../img/night-city-racing.png" alt="Night City Racing">
+                                <div class="game-card-info">
+                                    <h4>Night City Racing</h4>
+                                </div>
+                            </a>
+                            <a href="../game/bob-the-robber.html" class="game-card">
+                                <img src="../img/bob-the-robber.png" alt="Bob The Robber">
+                                <div class="game-card-info">
+                                    <h4>Bob The Robber</h4>
+                                </div>
+                            </a>
+                            <a href="../game/geometry-dash.html" class="game-card">
+                                <img src="../img/geometry-dash.png" alt="Geometry Dash">
+                                <div class="game-card-info">
+                                    <h4>Geometry Dash</h4>
+                                </div>
+                            </a>
+                            <a href="../game/boxrob.html" class="game-card">
+                                <img src="../img/boxrob.png" alt="BoxRob">
+                                <div class="game-card-info">
+                                    <h4>BoxRob</h4>
+                                </div>
+                            </a>
+                            <a href="../game/lows-adventures.html" class="game-card">
+                                <img src="../img/lows-adventures.png" alt="Lows Adventures">
+                                <div class="game-card-info">
+                                    <h4>Lows Adventures</h4>
+                                </div>
+                            </a>
+                            <a href="../game/traffic-tour.html" class="game-card">
+                                <img src="../img/traffic-tour.png" alt="Traffic Tour">
+                                <div class="game-card-info">
+                                    <h4>Traffic Tour</h4>
+                                </div>
+                            </a>
+                            <a href="../game/burnin-rubber-5-xs.html" class="game-card">
+                                <img src="../img/burnin-rubber-5-xs.png" alt="Burnin Rubber 5 XS">
+                                <div class="game-card-info">
+                                    <h4>Burnin Rubber 5 XS</h4>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-website">
+            <div class="website-info">
+                <div class="info-column">
+                    <h3>About Night City Racing</h3>
+                    <p>Night City Racing is your premier destination for high-quality racing and adventure games. We offer a carefully
+                        curated collection of top unblocked web games.</p>
+                </div>
+                <div class="info-column">
+                    <h3>Our Games</h3>
+                    <ul>
+                        <li>Action & Racing</li>
+                        <li>Adventure & Platforms</li>
+                        <li>Puzzles & Strategy</li>
+                        <li>Shooting & Sports</li>
+                    </ul>
+                </div>
+                <div class="info-column">
+                    <h3>Features</h3>
+                    <ul>
+                        <li>Free to Play</li>
+                        <li>HD Graphics</li>
+                        <li>Instant Browser Play</li>
+                        <li>Regular Updates</li>
+                    </ul>
+                </div>
+                <div class="info-column">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="../index.html" class="social-link">Facebook</a>
+                        <a href="../index.html" class="social-link">Twitter</a>
+                        <a href="../index.html" class="social-link">Discord</a>
+                        <a href="../index.html" class="social-link">YouTube</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Night City Racing. All rights reserved.</p>
+        </footer>
+    </main>
+
+    <script src="../game.js"></script>
+</body>
+
+</html>
