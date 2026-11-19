@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Disallow Google verification & hidden files
+Disallow: /google*.html
+Disallow: /.git/
+Disallow: /.vscode/
+
+# Sitemap index
+Sitemap: https://nightcityracing.github.io/sitemap.xml
